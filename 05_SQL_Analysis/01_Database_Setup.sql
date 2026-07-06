@@ -1,1 +1,13 @@
+-- ==========================================================
+-- Project: Bangalore Restaurant Market Analysis
+-- Phase 1: Database Setup
+-- Author: Kasthuri
+-- Database Engine: DuckDB
+-- ==========================================================
+-- Purpose:
+-- This script initializes the SQL environment for the project.
+-- The restaurant dataset will be imported into a table named 'zomato'
+-- in the next phase (02_Data_Import.sql).
 
+-- DuckDB creates the database file automatically.
+-- No CREATE DATABASE statement is required.
