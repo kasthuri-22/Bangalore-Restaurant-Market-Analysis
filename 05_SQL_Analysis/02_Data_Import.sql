@@ -1,25 +1,20 @@
--- ==========================================================
--- Project: Bangalore Restaurant Market Analysis
+-- ============================================================
+-- Bangalore Restaurant Market Analysis
 -- Phase 2: Data Import
--- Author: Kasthuri
--- Database: DuckDB
--- ==========================================================
+-- ============================================================
 
--- Purpose:
--- Import the Zomato restaurant dataset from a CSV file
--- into a table named 'zomato'.
+USE bangalore_restaurant_analysis;
 
-CREATE OR REPLACE TABLE zomato AS
-SELECT *
-FROM read_csv_auto(
-    'D:/Bangalore_Restaurant_Market_Analysis/data/zomato.csv',
-    HEADER = TRUE
-);
+-- Data imported from:
+-- processed_data/zomato_mysql.csv
 
--- ==========================================================
--- Validation Query
--- Verify that all records were imported successfully.
--- ==========================================================
+-- Import Method:
+-- Python (Pandas + SQLAlchemy)
 
-SELECT COUNT(*) AS total_rows
+-- Table Name:
+-- zomato
+
+-- Verify successful import
+
+SELECT COUNT(*) AS total_restaurants
 FROM zomato;
