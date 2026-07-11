@@ -143,4 +143,43 @@ WHERE rating >
 )
 ORDER BY rating DESC, votes DESC;
 ```
+=====================================================
+-- Task 7: Factors Associated with Restaurant Popularity
+-- Answers:
+-- What characteristics are associated with highly popular restaurant chains?
+-- Why:
+-- Popularity should not be analysed using votes alone.
+-- This query compares customer satisfaction, pricing, and service features
+-- among restaurant chains with high average customer engagement.
+=====================================================
+SELECT
+    name,
+    COUNT(*) AS restaurant_count,
+    ROUND(AVG(rating), 2) AS average_rating,
+    ROUND(AVG(votes), 2) AS average_votes,
+    ROUND(AVG(approx_cost_for_two_cleaned), 2) AS average_cost_for_two,
 
+    ROUND(
+        AVG(CASE
+            WHEN online_order = 'Yes' THEN 1
+            ELSE 0
+        END) * 100,
+        2
+    ) AS online_order_percentage,
+
+    ROUND(
+        AVG(CASE
+            WHEN book_table = 'Yes' THEN 1
+            ELSE 0
+        END) * 100,
+        2
+    ) AS table_booking_percentage
+
+FROM zomato_cleaned
+WHERE rating IS NOT NULL
+  AND votes IS NOT NULL
+  AND approx_cost_for_two_cleaned IS NOT NULL
+GROUP BY name
+HAVING COUNT(*) > 1
+ORDER BY average_votes DESC
+LIMIT 10;
