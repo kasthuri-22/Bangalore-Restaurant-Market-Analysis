@@ -188,5 +188,26 @@ ORDER BY
     total_votes DESC,
     average_cost_for_two ASC
 LIMIT 10;
-```
+
+   =====================================================
+-- Task 7: Supply–Engagement Balance by Location
+-- Answers:
+-- How does customer engagement compare with restaurant supply across locations?
+-- Why:
+-- A high restaurant count alone does not necessarily indicate an unattractive
+-- competitive market. Customer engagement must also be considered.
+   =====================================================
+SELECT
+    location,
+    COUNT(*) AS restaurant_count,
+    SUM(votes) AS total_votes,
+    ROUND(AVG(votes), 2) AS average_votes_per_restaurant
+FROM zomato_cleaned
+WHERE location IS NOT NULL
+  AND votes IS NOT NULL
+GROUP BY location
+HAVING COUNT(*) >= 20
+ORDER BY average_votes_per_restaurant DESC
+LIMIT 10;
+
 
