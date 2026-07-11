@@ -115,7 +115,7 @@ LIMIT 10;
 
 
 -- =====================================================
--- Task 5: Best Value-for-Money Locations
+-- Task 5: Rating and Cost Comparison by Location
 -- Business Question:
 -- Which locations provide high customer satisfaction
 -- at a reasonable average cost?
