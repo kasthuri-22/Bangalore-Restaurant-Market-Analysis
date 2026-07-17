@@ -1,4 +1,4 @@
-# 📊 Bangalore Restaurant Market Analysis Dashboard
+#  Bangalore Restaurant Market Analysis Dashboard
 
 ## Overview
 
@@ -6,7 +6,7 @@ This Power BI dashboard presents an interactive business intelligence solution f
 
 The dashboard was developed using data that was cleaned in SQL and analyzed through Python Exploratory Data Analysis (EDA), ensuring that the visualizations are supported by data-driven decisions.
 
----
+
 
 ## Dashboard Objectives
 
@@ -19,7 +19,7 @@ The dashboard answers the following business questions:
 - Does table booking impact customer engagement?
 - Which cuisines dominate the Bangalore restaurant market?
 
----
+
 
 ## Dashboard Pages
 
@@ -47,7 +47,6 @@ Interactive slicers allow users to filter the dashboard by:
 - Online Ordering
 - Table Booking
 
----
 
 ### 📄 Page 2 – Restaurant Explorer
 
@@ -59,7 +58,6 @@ The page includes:
 - Dynamic filtering
 - Interactive exploration of restaurant attributes
 
----
 
 ## Key Business Insights
 
@@ -69,8 +67,8 @@ The page includes:
 - Restaurants offering online ordering generally show higher customer engagement.
 - Restaurants providing table booking also demonstrate stronger customer engagement.
 - North Indian cuisine has the highest market presence in Bangalore.
+  
 
----
 
 ## Analytical Approach
 
@@ -80,21 +78,17 @@ Therefore, **Median Votes** was used instead of **Average Votes** in the Power B
 
 This analytical decision ensures more reliable comparisons across locations, price segments, and service features.
 
----
+
 
 ## Dashboard Preview
 
 ### Executive Dashboard
 
-> *(Insert Executive Dashboard Screenshot Here)*
-
----
+<img width="881" height="508" alt="Executive_Dashboard" src="https://github.com/user-attachments/assets/5472a67c-e5b5-4ff2-aa4d-1c5d6a3875dc" />
 
 ### Restaurant Explorer
+<img width="885" height="497" alt="Restaurant_Explorer" src="https://github.com/user-attachments/assets/f1c937e8-7bb6-4cae-873d-57d928483029" />
 
-> *(Insert Restaurant Explorer Screenshot Here)*
-
----
 
 ## Tools Used
 
@@ -105,7 +99,6 @@ This analytical decision ensures more reliable comparisons across locations, pri
 - Slicers
 - Data Modeling
 
----
 
 ## Dashboard Features
 
@@ -116,7 +109,6 @@ This analytical decision ensures more reliable comparisons across locations, pri
 - Executive reporting dashboard
 - Restaurant exploration page
 
----
 
 ## Future Enhancements
 
