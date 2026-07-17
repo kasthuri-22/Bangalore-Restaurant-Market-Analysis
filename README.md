@@ -1,4 +1,14 @@
 #  Bangalore Restaurant Market Analysis
+
+![SQL](https://img.shields.io/badge/SQL-Data%20Cleaning-blue)
+
+![Python](https://img.shields.io/badge/Python-EDA-yellow)
+
+![PowerBI](https://img.shields.io/badge/Power%20BI-Dashboard-orange)
+
+![Pandas](https://img.shields.io/badge/Pandas-Analysis-purple)
+
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 ## End-to-End Data Analytics Case Study using SQL, Python & Power BI
 
 
