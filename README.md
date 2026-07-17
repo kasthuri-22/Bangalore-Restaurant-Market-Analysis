@@ -86,7 +86,7 @@ Business Strategy Recommendations
 
 
 
-# 🛠️ Technology Stack
+#  Technology Stack
 
 | Tool | Purpose |
 |------|---------|
